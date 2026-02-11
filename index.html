@@ -1,1 +1,212 @@
-hello word
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekanik Panggilan Pro - Servis Mobil di Rumah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Mekanik<span>Pro</span></div>
+    </nav>
+
+    <header class="hero">
+        <h1>Mobil Mogok? <br>Tak Perlu Derek!</h1>
+        <p>Mekanik ahli datang ke lokasi Anda 24/7. Cepat, Bergaransi, & Transparan.</p>
+        <a href="#booking" class="btn-main">Pesan Sekarang</a>
+    </header>
+
+    <section class="features">
+        <div class="feature-item">
+            <span>🚀</span>
+            <h4>Respon Cepat</h4>
+            <p>Tiba di lokasi dalam 30-60 menit.</p>
+        </div>
+        <div class="feature-item">
+            <span>💎</span>
+            <h4>Teknisi Ahli</h4>
+            <p>Berpengalaman menangani berbagai jenis mobil.</p>
+        </div>
+        <div class="feature-item">
+            <span>💰</span>
+            <h4>Harga Jujur</h4>
+            <p>Estimasi biaya diberikan di awal.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Ganti Oli</h3>
+                <p>Mulai dari Rp 150rb</p>
+            </div>
+            <div class="service-card">
+                <h3>Tune Up</h3>
+                <p>Mesin kembali bertenaga</p>
+            </div>
+            <div class="service-card">
+                <h3>Cek Aki/Rem</h3>
+                <p>Keamanan nomor satu</p>
+            </div>
+        </div>
+    </section>
+<section id="testimonials" class="testimonials">
+    <h2>Apa Kata Pelanggan Kami?</h2>
+    <div class="testimonial-container">
+        <div class="testi-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Sangat cepat! Mobil mogok di tengah jalan, mekanik datang dalam 30 menit. Harganya pun transparan."</p>
+            <h4>- Pak Andi (Jakarta)</h4>
+        </div>
+
+        <div class="testi-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Ganti oli di rumah jadi praktis banget. Mekaniknya ramah dan kerjanya sangat rapi. Rekomen!"</p>
+            <h4>- Ibu Sari (Depok)</h4>
+        </div>
+
+        <div class="testi-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Akinya mati total, untung ada layanan ini. Gak perlu repot cari bengkel jauh-jauh."</p>
+            <h4>- Mas Budi (Bekasi)</h4>
+        </div>
+    </div>
+</section>
+
+    <section id="booking" class="booking">
+        <div class="form-container">
+            <h2>Formulir Booking</h2>
+            <form id="whatsappForm">
+                <input type="text" id="name" placeholder="Nama Lengkap" required>
+                <input type="text" id="car" placeholder="Merk & Tipe Mobil" required>
+                <textarea id="issue" placeholder="Keluhan Mobil (Misal: Mesin tidak mau hidup)" required></textarea>
+                <input type="text" id="location" placeholder="Lokasi Anda (Kelurahan/Kecamatan)" required>
+                <button type="submit">Kirim ke WhatsApp Mekanik</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mekanik Panggilan Pro. Siap membantu kapan saja.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Reset Dasar */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+
+/* Navigasi */
+nav { background: #2c3e50; padding: 15px 5%; color: white; display: flex; justify-content: center; }
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #e67e22; }
+
+/* Hero Section */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center; 
+    padding: 80px 20px;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+.btn-main { background: #e67e22; color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; }
+
+/* Keunggulan */
+.features { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px 5%; justify-content: center; background: white; }
+.feature-item { text-align: center; flex: 1; min-width: 250px; padding: 20px; }
+.feature-item span { font-size: 40px; }
+
+/* Layanan */
+.services { padding: 50px 5%; text-align: center; }
+.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+.service-card { background: white; padding: 20px; border-bottom: 4px solid #2c3e50; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+
+/* Form */
+.booking { padding: 50px 5%; background: #ecf0f1; }
+.form-container { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; }
+button { width: 100%; background: #27ae60; color: white; padding: 15px; border: none; border-radius: 8px; font-size: 17px; cursor: pointer; transition: 0.3s; }
+button:hover { background: #219150; }
+
+footer { text-align: center; padding: 20px; background: #2c3e50; color: white; font-size: 14px; }
+/* Gaya Testimoni */
+.testimonials {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testi-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.testi-card:hover {
+    transform: translateY(-5px); /* Efek sedikit terangkat saat disentuh mouse */
+}
+
+.stars {
+    color: #f1c40f;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.testi-card p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testi-card h4 {
+    color: #2c3e50;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const car = document.getElementById('car').value;
+    const issue = document.getElementById('issue').value;
+    const location = document.getElementById('location').value;
+
+    // Ganti dengan nomor WhatsApp Anda (Gunakan kode negara 62)
+    const phoneNumber = "6281395285914"; 
+
+    const text = `*ORDER MEKANIK PANGGILAN*%0A` +
+                 `----------------------------%0A` +
+                 `*Nama:* ${name}%0A` +
+                 `*Mobil:* ${car}%0A` +
+                 `*Masalah:* ${issue}%0A` +
+                 `*Lokasi:* ${location}%0A` +
+                 `----------------------------%0A` +
+                 `Mohon segera diproses ya!`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+    window.open(url, '_blank');
+});
