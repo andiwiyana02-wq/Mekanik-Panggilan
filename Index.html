@@ -1,1 +1,720 @@
-hello word
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affan Motor - Mekanik Panggilan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff6600;
+            --primary-dark: #e55a00;
+            --dark: #121212;
+            --dark-light: #1e1e1e;
+            --gray: #2d2d2d;
+            --light: #f5f5f5;
+            --text: #e0e0e0;
+            --text-secondary: #b0b0b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 102, 0, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 102, 0, 0.05) 0%, transparent 20%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Logo */
+        header {
+            background: linear-gradient(135deg, var(--dark-light) 0%, var(--dark) 100%);
+            padding: 20px 0;
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+        }
+
+        .logo-inner {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .logo-text {
+            position: absolute;
+            color: var(--dark);
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo-text h1 {
+            font-size: 12px;
+            top: 15px;
+            position: absolute;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+
+        .logo-text p {
+            font-size: 8px;
+            bottom: 20px;
+            position: absolute;
+            width: 100%;
+            font-weight: 500;
+        }
+
+        .logo-icon {
+            font-size: 48px;
+            color: var(--primary);
+            z-index: 2;
+        }
+
+        .company-name {
+            text-align: left;
+        }
+
+        .company-name h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .company-name p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(18, 18, 18, 0.95) 100%);
+            text-align: center;
+            margin-bottom: 60px;
+            border-radius: 0 0 30px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="%23ff6600" opacity="0.05"/></svg>');
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--light);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: var(--text-secondary);
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
+            background: linear-gradient(to right, var(--primary-dark), var(--primary));
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--light);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, var(--dark-light), var(--gray));
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 102, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 102, 0, 0.3);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+        }
+
+        /* Booking Form */
+        .booking-form {
+            background: linear-gradient(145deg, var(--dark-light), var(--gray));
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 102, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--light);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--gray);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .submit-button {
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .submit-button:hover {
+            background: linear-gradient(to right, var(--primary-dark), var(--primary));
+            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* WhatsApp Integration */
+        .whatsapp-info {
+            text-align: center;
+            background: linear-gradient(145deg, var(--dark-light), var(--gray));
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            border: 1px solid rgba(255, 102, 0, 0.1);
+        }
+
+        .whatsapp-info h3 {
+            color: var(--light);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-info p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .whatsapp-icon {
+            font-size: 3.5rem;
+            color: #25D366;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark-light) 0%, var(--dark) 100%);
+            padding: 40px 0 20px;
+            border-top: 2px solid var(--primary);
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-column p, .footer-column a {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .booking-form {
+                padding: 25px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .service-card, .booking-form, .whatsapp-info {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-inner">
+                        <div class="logo-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>AFFAN MOTOR</h1>
+                            <p>Ahli Reparasi Mobil Anda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-name">
+                    <h1>AFFAN MOTOR</h1>
+                    <p>Mekanik Panggilan Profesional</p>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> 0813-9528-5914</p>
+                <p><i class="fas fa-map-marker-alt"></i> Melayani Seluruh Area</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Layanan Mekanik Panggilan Profesional</h2>
+            <p>Kami siap membantu permasalahan mobil Anda di mana saja dan kapan saja. <span class="highlight">Affan Motor</span> memberikan solusi cepat dan tepat untuk perawatan dan perbaikan kendaraan Anda.</p>
+            <a href="#booking" class="cta-button">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Layanan Kami</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Tune Up Mesin</h3>
+                    <p>Perawatan berkala mesin untuk performa optimal dan efisiensi bahan bakar maksimal.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Trouble Shooting</h3>
+                    <p>Diagnosa masalah mobil Anda dan solusi perbaikan yang tepat sesuai kondisi kendaraan.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical</h3>
+                    <p>Perbaikan sistem kelistrikan mobil, termasuk aki, alternator, starter, dan wiring.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Perbaikan Kaki-kaki</h3>
+                    <p>Service shockbreaker, ball joint, tie rod, dan komponen suspensi lainnya.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>AC Mobil</h3>
+                    <p>Service AC, isi freon, perbaikan kompresor, dan perawatan sistem pendingin.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Lainnya</h3>
+                    <p>Ganti oli, service rem, perbaikan transmisi, dan berbagai perbaikan mobil lainnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Formulir Pemesanan</h2>
+            </div>
+            
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama Pelanggan <span class="highlight">*</span></label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lokasi">Lokasi <span class="highlight">*</span></label>
+                            <input type="text" id="lokasi" name="lokasi" placeholder="Alamat lengkap lokasi perbaikan" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="plat">Plat Nomor <span class="highlight">*</span></label>
+                            <input type="text" id="plat" name="plat" placeholder="Contoh: B 1234 ABC" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="jenis">Jenis Kendaraan <span class="highlight">*</span></label>
+                            <select id="jenis" name="jenis" required>
+                                <option value="">Pilih jenis kendaraan</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="SUV">SUV</option>
+                                <option value="MPV">MPV</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="Pickup">Pickup</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="kendala">Jenis Kendala Mobil <span class="highlight">*</span></label>
+                        <textarea id="kendala" name="kendala" placeholder="Jelaskan kendala yang dialami oleh mobil Anda" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <i class="fab fa-whatsapp"></i> Kirim Pesan via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Integration -->
+    <section class="whatsapp-integration">
+        <div class="container">
+            <div class="whatsapp-info">
+                <div class="whatsapp-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>Terhubung Langsung via WhatsApp</h3>
+                <p>Setelah mengisi formulir, pesan Anda akan langsung terkirim ke WhatsApp kami di nomor <span class="highlight">0813-9528-5914</span>. Tim kami akan merespons secepatnya untuk mengkonfirmasi pesanan dan menjadwalkan kunjungan mekanik ke lokasi Anda.</p>
+                <a href="https://wa.me/6281395285914?text=Halo%20Affan%20Motor,%20saya%20ingin%20konsultasi%20tentang%20perbaikan%20mobil" class="cta-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat Langsung via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AFFAN MOTOR</h3>
+                    <p>Mekanik panggilan profesional yang siap melayani perbaikan mobil di lokasi Anda. Kami memberikan solusi cepat, tepat, dan terpercaya.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-phone-alt"></i> 0813-9528-5914</p>
+                    <p><i class="fas fa-envelope"></i> affanmotor@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Melayani seluruh area</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Layanan</h3>
+                    <a href="#">Tune Up Mesin</a>
+                    <a href="#">Trouble Shooting</a>
+                    <a href="#">Electrical</a>
+                    <a href="#">Perbaikan Kaki-kaki</a>
+                    <a href="#">AC Mobil</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Affan Motor - Mekanik Panggilan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Ambil nilai dari form
+            const nama = document.getElementById('nama').value;
+            const lokasi = document.getElementById('lokasi').value;
+            const plat = document.getElementById('plat').value;
+            const jenis = document.getElementById('jenis').value;
+            const kendala = document.getElementById('kendala').value;
+            
+            // Format pesan untuk WhatsApp
+            const message = `Halo Affan Motor, saya ingin memesan layanan mekanik panggilan dengan detail sebagai berikut:
+            
+Nama: ${nama}
+Lokasi: ${lokasi}
+Plat Nomor: ${plat}
+Jenis Kendaraan: ${jenis}
+Kendala: ${kendala}
+
+Mohon konfirmasi ketersediaan dan perkiraan biaya. Terima kasih.`;
+            
+            // Encode pesan untuk URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Nomor WhatsApp tujuan
+            const phoneNumber = '6281395285914';
+            
+            // Buat URL WhatsApp
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            
+            // Buka WhatsApp di tab baru
+            window.open(whatsappURL, '_blank');
+            
+            // Reset form setelah submit
+            document.getElementById('bookingForm').reset();
+            
+            // Tampilkan notifikasi
+            alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk mengirim pesan. Tim kami akan merespons secepatnya.');
+        });
+    </script>
+</body>
+  </html>
