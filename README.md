@@ -3,112 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mekanik Panggilan Pro - Servis Mobil di Rumah</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Affan Motor - Mekanik Panggilan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff6600;
+            --primary-dark: #e55a00;
+            --dark: #121212;
+            --dark-light: #1e1e1e;
+            --gray: #2d2d2d;
+            --light: #f5f5f5;
+            --text: #e0e0e0;
+            --text-secondary: #b0b0b0;
+        }
 </head>
 <body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-inner">
+                        <div class="logo-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>AFFAN MOTOR</h1>
+                            <p>Ahli Reparasi Mobil Anda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-name">
+                    <h1>AFFAN MOTOR</h1>
+                    <p>Mekanik Panggilan Profesional</p>
+                </div>
+            </div>
+            
+Nama: ${nama}
+Lokasi: ${lokasi}
+Plat Nomor: ${plat}
+Jenis Kendaraan: ${jenis}
+Kendala: ${kendala}
 
-<section id="testimonials" class="testimonials">
-    <h2>Apa Kata Pelanggan Kami?</h2>
-    <div class="testimonial-container">
-        <div class="testi-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p>"Sangat cepat! Mobil mogok di tengah jalan, mekanik datang dalam 30 menit. Harganya pun transparan."</p>
-            <h4>- Pak Andi (Jakarta)</h4>
-        </div>
-</section>
-
-</body>
-</html>
-/* Reset Dasar */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Arial', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
-
-/* Navigasi */
-nav { background: #2c3e50; padding: 15px 5%; color: white; display: flex; justify-content: center; }
-.logo { font-size: 24px; font-weight: bold; }
-.logo span { color: #e67e22; }
-
-/* Hero Section */
-.hero { 
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1000');
-    background-size: cover;
-    background-position: center;
-    color: white; 
-    text-align: center; 
-    padding: 80px 20px;
-}
-.hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
-.btn-main { background: #e67e22; color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; }
-
-/* Keunggulan */
-.features { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px 5%; justify-content: center; background: white; }
-.feature-item { text-align: center; flex: 1; min-width: 250px; padding: 20px; }
-.feature-item span { font-size: 40px; }
-
-/* Layanan */
-.services { padding: 50px 5%; text-align: center; }
-.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
-.service-card { background: white; padding: 20px; border-bottom: 4px solid #2c3e50; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-
-/* Form */
-.booking { padding: 50px 5%; background: #ecf0f1; }
-.form-container { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; }
-button { width: 100%; background: #27ae60; color: white; padding: 15px; border: none; border-radius: 8px; font-size: 17px; cursor: pointer; transition: 0.3s; }
-button:hover { background: #219150; }
-
-footer { text-align: center; padding: 20px; background: #2c3e50; color: white; font-size: 14px; }
-/* Gaya Testimoni */
-.testimonials {
-    padding: 60px 5%;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-.testimonials h2 {
-    margin-bottom: 30px;
-    color: #2c3e50;
-}
-
-.testimonial-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.testi-card {
-    background: #fdfdfd;
-    border: 1px solid #eee;
-    padding: 25px;
-    border-radius: 15px;
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-}
-
-.testi-card:hover {
-    transform: translateY(-5px); /* Efek sedikit terangkat saat disentuh mouse */
-}
-
-.stars {
-    color: #f1c40f;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.testi-card p {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.testi-card h4 {
-    color: #2c3e50;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-document.getElementById('whatsappForm').addEventListener('submit', function(e) 
+Mohon konfirmasi ketersediaan dan perkiraan biaya. Terima kasih.`;
+            
