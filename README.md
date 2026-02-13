@@ -19,7 +19,7 @@
         </div>
     </header>
 
-    <section class="services container">
+   <section class="services container">
         <h2 class="section-title">Layanan Unggulan</h2>
         <div class="grid">
             <div class="card"><h3>Tune Up</h3><p>Mesin kembali bertenaga.</p></div>
@@ -28,10 +28,9 @@
         </div>
     </section>
 
-    <a href="tel:081395285914" class="btn-float-call">
+<a href="tel:081395285914" class="btn-float-call">
         <span>📞 Hubungi Sekarang</span>
     </a>
-
 
 </body>
 </html>
