@@ -14,7 +14,7 @@
             <h1>Mekanik Pro Panggilan 🛠️</h1>
             <p>Servis Mobil Profesional & Bergaransi Langsung di Lokasi Anda.</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/6281234567890" class="btn-primary">Pesan via WhatsApp</a>
+                <a href="https://wa.me/081395285914" class="btn-primary">Pesan via WhatsApp</a>
             </div>
         </div>
     </header>
@@ -28,7 +28,7 @@
         </div>
     </section>
 
-    <a href="tel:6281395285914" class="btn-float-call">
+    <a href="tel:081395285914" class="btn-float-call">
         <span>📞 Hubungi Sekarang</span>
     </a>
 
