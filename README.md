@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <header class="hero-section">
     <header class="hero-section">
         <div class="overlay"></div>
         <div class="container">
@@ -32,6 +32,9 @@
         <span>📞 Hubungi Sekarang</span>
     </a>
 
+
+</body>
+</html>
 </body>
 </html>
 /* General Style */
