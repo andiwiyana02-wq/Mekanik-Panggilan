@@ -10,7 +10,7 @@
  <header class="hero-section">
         <div class="overlay"></div>
         <div class="container">
-            <h1>Mekanik Pro Panggilan 🛠️</h1>
+            <h1>Mekanik Pro Panggilan 🔧🔩⚙️</h1>
             <p>Servis Mobil Profesional & Bergaransi Langsung di Lokasi Anda.</p>
             <div class="cta-buttons">
                 <a href="https://wa.me/081395285914" class="btn-primary">Pesan via WhatsApp</a>
