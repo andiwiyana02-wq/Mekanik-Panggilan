@@ -21,6 +21,17 @@
 <section class="services container">
         <h2 class="section-title">Layanan Unggulan</h2>
         <div class="grid">
+            </div>
+<section id="location" class="container">
+    <h2 class="section-title">Lokasi Basecamp & Area Layanan</h2>
+    <p style="text-align: center; margin-bottom: 20px;">
+        📍 Melayani area: Bandung Kota, Kota Cimahi, dan Kab.Bandung Barat.
+    </p>
+    
+  <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
             <div class="card"><h3>Tune Up</h3><p>Mesin kembali bertenaga.</p></div>
             <div class="card"><h3>Ganti Oli</h3><p>Praktis di rumah Anda.</p></div>
             <div class="card"><h3>Cek Rem</h3><p>Keamanan utama keluarga.</p></div>
