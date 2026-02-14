@@ -13,7 +13,7 @@
             <h1>AFFAN MOTOR.Mobile 🔧🔩⚙️</h1>
             <p>Servis Mobil Profesional & Bergaransi Langsung di Lokasi Anda.</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/081395285914" class="btn-primary">Pesan via WhatsApp</a>
+                <a href="https://wa.me/6281395285914" class="btn-primary">Pesan via WhatsApp</a>
             </div>
         </div>
     </header>
@@ -21,6 +21,15 @@
 <section class="services container">
         <h2 class="section-title">Layanan Unggulan</h2>
         <div class="grid">
+            <div class="card"><h3>Tune Up</h3><p>Mesin kembali bertenaga.</p></div>
+            <div class="card"><h3>Ganti Oli</h3><p>Praktis di rumah Anda.</p></div>
+            <div class="card"><h3>Cek Rem</h3><p>Keamanan utama keluarga.</p></div>
+        </div>
+    </section>
+
+ <a href="tel:6281395285914" class="btn-float-call">
+        <span>📞 Hubungi Sekarang</span>
+    </a>
             </div>
 <section id="location" class="container">
     <h2 class="section-title">Lokasi Basecamp & Area Layanan</h2>
@@ -29,18 +38,4 @@
         📍 Melayani area: Bandung Kota, Kota Cimahi, dan Kab.Bandung Barat.
     </p>
     
-  <div class="map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</section>
-            <div class="card"><h3>Tune Up</h3><p>Mesin kembali bertenaga.</p></div>
-            <div class="card"><h3>Ganti Oli</h3><p>Praktis di rumah Anda.</p></div>
-            <div class="card"><h3>Cek Rem</h3><p>Keamanan utama keluarga.</p></div>
-        </div>
-    </section>                          <a href="tel:081395285914" class="btn-float-call">
-        <span>📞 Hubungi Sekarang</span>
-    </a>
-
-</body>
-</html> 
-
+  
