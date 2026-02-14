@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFFAN MOTOR.Mobile</title>
+    <title>Mekanik-Panggilan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,7 +10,7 @@
  <header class="hero-section">
         <div class="overlay"></div>
         <div class="container">
-            <h1>Mekanik Pro Panggilan 🔧🔩⚙️</h1>
+            <h1>AFFAN MOTOR.Mobile 🔧🔩⚙️</h1>
             <p>Servis Mobil Profesional & Bergaransi Langsung di Lokasi Anda.</p>
             <div class="cta-buttons">
                 <a href="https://wa.me/081395285914" class="btn-primary">Pesan via WhatsApp</a>
