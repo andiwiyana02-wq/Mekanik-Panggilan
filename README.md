@@ -1,118 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mekanik Panggilan Profesional</title>
+    <title>Mekanik Pro Panggilan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-        <h1>Mechanic On-Call 🛠️</h1>
-        <p>Solusi servis mobil langsung di rumah Anda!</p>
+ <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Mekanik Pro Panggilan 🛠️</h1>
+            <p>Servis Mobil Profesional & Bergaransi Langsung di Lokasi Anda.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/081395285914" class="btn-primary">Pesan via WhatsApp</a>
+            </div>
+        </div>
     </header>
 
-  <section id="services">
-        <h3>Layanan Kami</h3>
-        <ul>
-            <li>✅ Ganti Oli & Filter</li>
-            <li>✅ Cek Sistem Rem</li>
-            <li>✅ Jumper Aki / Ganti Aki</li>
-            <li>✅ Tune Up Mesin</li>
-        </ul>
-        </section>
+<section class="services container">
+        <h2 class="section-title">Layanan Unggulan</h2>
+        <div class="grid">
+            <div class="card"><h3>Tune Up</h3><p>Mesin kembali bertenaga.</p></div>
+            <div class="card"><h3>Ganti Oli</h3><p>Praktis di rumah Anda.</p></div>
+            <div class="card"><h3>Cek Rem</h3><p>Keamanan utama keluarga.</p></div>
+        </div>
+    </section>                          <a href="tel:081395285914" class="btn-float-call">
+        <span>📞 Hubungi Sekarang</span>
+    </a>
 
-<section id="booking">
-        <h3>Pesan Mekanik Sekarang</h3>
-        <form id="orderForm">
-        <input type="text" id="name" placeholder="Nama Anda" required>
-        <input type="text" id="carModel" placeholder="Model Mobil (Contoh: Toyota Avanza)" required>
-        <textarea id="issue" placeholder="Ceritakan kendala mobil Anda..." required></textarea>
-        <input type="text" id="address" placeholder="Alamat Lengkap" required>
-        <button type="submit">Kirim via WhatsApp</button>
-        </form>
-        </section>
-
-<script src="script.js"></script>
 </body>
-</html>   
-/* Gaya dasar agar terlihat modern */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
+</html> 
+/* General Style */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: #f0f2f5; color: #333; }
 
-header {
+/* Gradasi Modern pada Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 100px 20px;
     text-align: center;
-    background: #2c3e50;
+    position: relative;
+}
+
+.container { max-width: 1000px; margin: auto; }
+
+h1 { font-size: 2.5rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px; }
+p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; }
+
+/* Tombol Berwarna Cerah */
+.btn-primary {
+    background: #f39c12;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-#services {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-#booking {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Agar padding tidak merusak lebar */
-}
-
-button {
-    width: 100%;
-    background-color: #27ae60;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
     font-weight: bold;
-    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #2ecc71;
+.btn-primary:hover { background: #e67e22; transform: scale(1.05); }
+
+/* Card Services */
+.section-title { text-align: center; margin: 40px 0 20px; color: #2c3e50; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid #2a5298;
 }
-document.getElementById('orderForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Mencegah halaman refresh
 
-// 1. Ambil data dari input
-    const name = document.getElementById('name').value;
-    const car = document.getElementById('carModel').value;
-    const issue = document.getElementById('issue').value;
-    const address = document.getElementById('address').value;
-
-// 2. const myPhoneNumber = "081395285914"; 
-
-// 3. const message = Halo Mekanik! Saya ingin pesan servis:%0A%0A +
-                    *Nama:* ${name}%0A + 
-                    *Mobil:* ${car}%0A +
-                    *Kendala:* ${issue}%0A +
-                    *Alamat:* ${address};
-
-// 4. const whatsappURL = https://wa.me/${myPhoneNumber}?text=${message}`;
-    window.open(whatsappURL, '_blank');
-});
-    
+/* Tombol Telpon Melayang */
+.btn-float-call {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #27ae60;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+}
