@@ -36,22 +36,25 @@
     </section>
 
  <section id="services" class="services">
-        <h2>Layanan Kami</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>Troble Shooting</h3>
-                <p>Kendala dijalan teratasi dan solusi</p>
-            </div>
-            <div class="service-card">
-                <h3>Tune Up</h3>
-                <p>Mesin kembali bertenaga</p>
-            </div>
-            <div class="service-card">
-                <h3>Cek AC,Kaki-kaki/Rem</h3>
-                <p>Keamanan nomor satu</p>
-            </div>
+    <section id="gallery" class="container gallery-section">
+    <h2 class="section-title">Galeri Aksi Mekanik</h2>
+    <p style="text-align: center; margin-bottom: 30px;">Dokumentasi hasil kerja dan perbaikan kami di lapangan.</p>
+    
+  <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1530046339160-711574701904?q=80&w=500&auto=format&fit=crop" alt="Servis Mesin">
         </div>
-    </section>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1504222490345-c075b3226523?q=80&w=500&auto=format&fit=crop" alt="Ganti Oli di Rumah">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=500&auto=format&fit=crop" alt="Pengecekan Kaki-kaki">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=500&auto=format&fit=crop" alt="Perbaikan Darurat">
+        </div>
+    </div>
+</section>
 <section id="testimonials" class="testimonials">
     <h2>Apa Kata Pelanggan Kami?</h2>
     <div class="testimonial-container">
