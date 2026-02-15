@@ -7,14 +7,22 @@ nav { background: #2c3e50; padding: 15px 5%; color: white; display: flex; justif
 .logo { font-size: 24px; font-weight: bold; }
 .logo span { color: #e67e22; }
 
-/* Hero Section */
+* Hero Section */
 .hero { 
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1000');
+    /* Update pada Hero Section di style.css */
+.hero-section {
+    /* Background: Lapisan gelap transparan DI ATAS foto agar tulisan terbaca */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1000&auto=format&fit=crop');
+    
+    /* Agar foto menutupi seluruh area dan posisinya di tengah */
     background-size: cover;
     background-position: center;
-    color: white; 
-    text-align: center; 
-    padding: 80px 20px;
+    
+    /* Properti lama di bawah ini biarkan saja */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
 }
 .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
 .btn-main { background: #e67e22; color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; }
@@ -123,20 +131,33 @@ footer { text-align: center; padding: 20px; background: #2c3e50; color: white; f
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     z-index: 999;
 }
-/* Hero Section */
-.hero { 
-    /* Update pada Hero Section di style.css */
-.hero-section {
-    /* Background: Lapisan gelap transparan DI ATAS foto agar tulisan terbaca */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1000&auto=format&fit=crop');
-    
-    /* Agar foto menutupi seluruh area dan posisinya di tengah */
-    background-size: cover;
-    background-position: center;
-    
-    /* Properti lama di bawah ini biarkan saja */
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    position: relative;
-        }
+/* --- GAYA GALERI FOTO --- */
+.gallery-section {
+    padding: 50px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    /* Membuat kolom otomatis: minimal lebar 250px, maksimal memenuhi ruang */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px; /* Jarak antar foto */
+}
+
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden; /* Agar sudut foto yang lancip tidak keluar dari bingkai bulat */
+    height: 200px; /* Tinggi seragam agar rapi */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar foto mengisi kotak tanpa gepeng (terpotong rapi) */
+    transition: transform 0.3s ease; /* Efek halus untuk hover */
+}
+
+/* Efek saat mouse diarahkan ke foto (sedikit zoom) */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
