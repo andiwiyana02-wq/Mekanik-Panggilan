@@ -109,45 +109,17 @@ footer { text-align: center; padding: 20px; background: #2c3e50; color: white; f
     border: none;
 }
 //* Gaya Tombol Telpon Melayang */
-.float-phone {
+/* Tombol Telpon Melayang */
+.btn-float-call {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #2980b9; /* Warna Biru Profesional */
+    bottom: 30px;
+    right: 30px;
+    background: #27ae60;
     color: white;
-    padding: 12px 20px;
+    padding: 15px 25px;
     border-radius: 50px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    z-index: 1000;
-    transition: all 0.3s;
-}
-
-.float-phone:hover {
-    background-color: #3498db;
-    transform: scale(1.05);
-}
-
-.phone-icon {
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.phone-text {
     font-weight: bold;
-    font-size: 14px;
-}
-/* Sembunyikan tulisan di layar yang sangat kecil agar tidak sempit */
-@media (max-width: 400px) {
-    .phone-text {
-        display: none;
-    }
-    .float-phone {
-        padding: 15px;
-    }
-    .phone-icon {
-        margin-right: 0;
-    }
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
 }
