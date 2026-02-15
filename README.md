@@ -1,5 +1,4 @@
 <html lang="id">
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +9,7 @@
 <body>
 
 <nav>
-        <div class="logo">Mekanik<span>Pro</span></div>
+        <div class="logo">AFFAN MOTOR<span>Mobile</span></div>
     </nav>
 
 <header class="hero">
@@ -40,15 +39,15 @@
         <h2>Layanan Kami</h2>
         <div class="service-grid">
             <div class="service-card">
-                <h3>Ganti Oli</h3>
-                <p>Mulai dari Rp 150rb</p>
+                <h3>Troble Shooting</h3>
+                <p>Kendala dijalan teratasi dan solusi</p>
             </div>
             <div class="service-card">
                 <h3>Tune Up</h3>
                 <p>Mesin kembali bertenaga</p>
             </div>
             <div class="service-card">
-                <h3>Cek Aki/Rem</h3>
+                <h3>Cek AC,Kaki-kaki/Rem</h3>
                 <p>Keamanan nomor satu</p>
             </div>
         </div>
@@ -59,19 +58,19 @@
         <div class="testi-card">
             <div class="stars">⭐⭐⭐⭐⭐</div>
             <p>"Sangat cepat! Mobil mogok di tengah jalan, mekanik datang dalam 30 menit. Harganya pun transparan."</p>
-            <h4>- Pak Andi (Jakarta)</h4>
+            <h4>- Pak Isak (Cimahi)</h4>
         </div>
 
 <div class="testi-card">
             <div class="stars">⭐⭐⭐⭐⭐</div>
             <p>"Ganti oli di rumah jadi praktis banget. Mekaniknya ramah dan kerjanya sangat rapi. Rekomen!"</p>
-            <h4>- Ibu Sari (Depok)</h4>
+            <h4>- Ibu Sari (Padalarang)</h4>
         </div>
 
 <div class="testi-card">
             <div class="stars">⭐⭐⭐⭐⭐</div>
             <p>"Akinya mati total, untung ada layanan ini. Gak perlu repot cari bengkel jauh-jauh."</p>
-            <h4>- Mas Budi (Bekasi)</h4>
+            <h4>- Pak Budi (Lembang)</h4>
         </div>
     </div>
 </section>
@@ -89,7 +88,7 @@
     </section>
 
  <footer>
-        <p>&copy; 2024 Mekanik Panggilan Pro. Siap membantu kapan saja.</p>
+        <p>&copy; 2018 Mekanik AFFAN MOTOR Mobile. Siap membantu kapan saja.</p>
     </footer>
 
 <script src="script.js"></script>
