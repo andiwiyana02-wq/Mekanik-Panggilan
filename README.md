@@ -101,15 +101,10 @@
     </p>
     
 <div class="map-responsive">
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8996787142114!2d107.5319964!3d-6.9025996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5002ff44e85%3A0xbf1aedeaaa522864!2sWorkshop1.AFFAN%20MOTOR!5e0!3m2!1sid!2sid!4v1771130387588!5m2!1sid!2sid<p style="text-align: center; margin-bottom: 20px;">" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8996787142114!2d107.5319964!3d-6.9025996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5002ff44e85%3A0xbf1aedeaaa522864!2sWorkshop1.AFFAN%20MOTOR!5e0!3m2!1sid!2sid!4v1771130387588!5m2!1sid!2sid<p style="text-align: center; margin-bottom: 20px;">" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-</section>
-
-    
+</section>    
 <a href="tel:081395285914" class="float-phone">
     <span class="phone-icon">📞</span>
     <span class="phone-text">Hubungi Sekarang</span>
 </a>
-
-</body>
-</html>
