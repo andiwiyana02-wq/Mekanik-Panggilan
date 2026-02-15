@@ -123,3 +123,20 @@ footer { text-align: center; padding: 20px; background: #2c3e50; color: white; f
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     z-index: 999;
 }
+/* Hero Section */
+.hero { 
+    /* Update pada Hero Section di style.css */
+.hero-section {
+    /* Background: Lapisan gelap transparan DI ATAS foto agar tulisan terbaca */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1000&auto=format&fit=crop');
+    
+    /* Agar foto menutupi seluruh area dan posisinya di tengah */
+    background-size: cover;
+    background-position: center;
+    
+    /* Properti lama di bawah ini biarkan saja */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+        }
