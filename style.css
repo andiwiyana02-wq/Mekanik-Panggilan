@@ -89,3 +89,36 @@ footer { text-align: center; padding: 20px; background: #2c3e50; color: white; f
     font-size: 0.9rem;
     font-weight: bold;
 }
+/* Membuat Peta Mengikuti Lebar Layar */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Rasio peta 16:9 */
+    position: relative;
+    height: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+/* Tombol Telpon Melayang */
+.btn-float-call {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #27ae60;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+    }
