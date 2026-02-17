@@ -9,7 +9,7 @@
 <body>
 
 <nav>
-        <div class=content://media/external/downloads/1000834691>AFFAN MOTOR<span>Mobile</span></div>
+        <div class="logo">AFFAN MOTOR<span>Mobile</span></div>
     </nav>
 
 <header class="hero">
