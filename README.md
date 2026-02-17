@@ -42,7 +42,7 @@
     
   <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1530046339160-711574701904?q=80&w=500&auto=format&fit=crop" alt="Servis Mesin">
+            <img src=TimePhoto_20251204_093249.jpgq=80&w=500&auto=format&fit=crop" alt="Servis Mesin">
         </div>
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1504222490345-c075b3226523?q=80&w=500&auto=format&fit=crop" alt="Ganti Oli di Rumah">
