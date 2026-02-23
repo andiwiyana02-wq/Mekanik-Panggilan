@@ -7,7 +7,7 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     const location = document.getElementById('location').value;
 
     // Ganti dengan nomor WhatsApp Anda (Gunakan kode negara 62)
-    const phoneNumber = "6281234567890"; 
+    const phoneNumber = "6281395285914"; 
 
     const text = `*ORDER MEKANIK PANGGILAN*%0A` +
                  `----------------------------%0A` +
