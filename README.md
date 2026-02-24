@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +7,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Mekanik<span>Pro</span></div>
+        <div class="logo">AFFAN MOTOR<span>.mobile</span></div>
     </nav>
 
    <header class="hero">
