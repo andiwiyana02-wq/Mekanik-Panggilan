@@ -38,7 +38,7 @@
         <h2>Layanan Kami</h2>
         <div class="service-grid">
             <div class="service-card">
-                <h3>Ganti Oli</h3>
+                <h3>Troble Shoting/Kendala perjalanan</h3>
                 <p>Mulai dari Rp 150rb</p>
             </div>
             <div class="service-card">
@@ -46,7 +46,7 @@
                 <p>Mesin kembali bertenaga</p>
             </div>
             <div class="service-card">
-                <h3>Cek Aki/Rem</h3>
+                <h3>Cek Aki/Rem/Electrical/AC</h3>
                 <p>Keamanan nomor satu</p>
             </div>
         </div>
@@ -65,7 +65,7 @@
     </section>
 
    <footer>
-        <p>&copy; 2024 Mekanik Panggilan Pro. Siap membantu kapan saja.</p>
+        <p>&copy; 2024 AFFAN MOTOR.mobile. Siap membantu kapan saja.</p>
     </footer>
 
   <script src="script.js"></script>
