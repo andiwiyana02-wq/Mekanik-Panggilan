@@ -55,10 +55,11 @@
     <h2 class="section-title">Lokasi Basecamp & Area Layanan</h2>
     <p style="text-align: center; margin-bottom: 20px;">
         📍 Melayani area: Kota Cimahi, Kab. Bandung Barat, dan sekitarnya.
-    </p>    
-    <div class="map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8996787142114!2d107.5319964!3d-6.9025996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5002ff44e85%3A0xbf1aedeaaa522864!2sWorkshop1.https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8996787142114!2d107.5319964!3d-6.9025996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5002ff44e85%3A0xbf1aedeaaa522864!2sWorkshop1.AFFAN%20MOTOR!5e0!3m2!1sid!2sid!4v1772289789323!5m2!1sid!2sidAFFAN%20MOTOR!5e0!3m2!1sid!2sid!4v1772289789323!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    </p>
+    
+ <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8996787142114!2d107.5319964!3d-6.9025996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5002ff44e85%3A0xbf1aedeaaa522864!2sWorkshop1.AFFAN%20MOTOR!5e0!3m2!1sid!2sid!4v1771143449907!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </section>
     <section id="testimonials" class="testimonials">
     <h2>Apa Kata Pelanggan Kami?</h2>
