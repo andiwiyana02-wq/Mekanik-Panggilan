@@ -51,6 +51,26 @@
             </div>
         </div>
     </section>
+    <section id="testimonials" class="testimonials">
+    <h2>Apa Kata Pelanggan Kami?</h2>
+    <div class="testimonial-container">
+        <div class="testi-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Sangat cepat! Mobil mogok di tengah jalan, mekanik datang dalam 30 menit. Harganya pun transparan."</p>
+            <h4>- Bu Riska (Cimahi)</h4>
+        </div>
+      <div class="testi-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Ganti oli di rumah jadi praktis banget. Mekaniknya ramah dan kerjanya sangat rapi. Rekomen!"</p>
+            <h4>- pak isyak (Padalarang)</h4>
+        </div>
+        <div class="testi-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Akinya mati total, untung ada layanan ini. Gak perlu repot cari bengkel jauh-jauh.Bisa antar Jemput unit"</p>
+            <h4>- pak lae(lengkong)</h4>
+        </div>
+    </div>
+</section>
     <section id="booking" class="booking">
         <div class="form-container">
             <h2>Formulir Booking</h2>
