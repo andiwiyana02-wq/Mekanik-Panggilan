@@ -59,55 +59,42 @@
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/20221226_125454.jpg" alt="Servis Mesin">
         </div>
-     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/20251125_113612.jpg" alt="Servis Mesin">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
            <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/20251204_093435.jpg" alt="Servis Mesin">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
            <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/20260102_104620.jpg" alt="Servis Mesin">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
            <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/20260202_121303.jpg" alt="Servis Mesin">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/20260218_121319.jpg" alt="Sporing /Balancing">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/IMG-20260122-WA0003.jpeg" alt="Pengecekan AC">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20251203_205335.jpg" alt="Perbaikan Darurat">
         </div>
-       <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20251203_205335.jpg" alt="Servis Mesin">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20251206_151244.jpg" alt="Perbaikan Darurat Electrical">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20251208_144649.jpg" alt="Perbaikan Audio">
         </div>
-     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20251223_100015.jpg" alt="Perbaikan Darurat Ganti Kopling Set">
         </div>
-     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20260101_101130.jpg" alt="Perbaikan Darurat Ganti Kopling">
         </div>
-      <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://github.com/andiwiyana02-wq/Mekanik-Panggilan/blob/c21fc40571e2bba0e1717fb579ea8b6b6c5c453c/TimePhoto_20260122_160502.jpg" alt="Perbaikan Darurat">
         </div>
